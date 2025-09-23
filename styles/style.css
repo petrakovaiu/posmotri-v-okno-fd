@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -16,7 +19,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  
 }
+
 
 h1,
 h2,
@@ -35,6 +40,44 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: flex;
+  max-height: 534px;
+  align-items: flex-end;
+  gap: 30px;
+  margin-top: 133px;
+  /* Для обрезания контента*,
+  /*
+  white-space: nowrap; 
+  overflow: hidden; */
+}
+
+/* .main {
+  gap: 30px;
+} */
+
+.result {
+  display: flex;
+  flex-direction: column;
+  /* min-width: 711px; */
+  gap: 16px;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  /* min-width: 399px; */
+  gap: 26px;
+}
+
+.result__video-container{
+  width: 100%
+}
+
+video {
+  width: 100%
 }
 
 /* Кастомный скроллбар */
